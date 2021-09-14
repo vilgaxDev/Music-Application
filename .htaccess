@@ -1,0 +1,5 @@
+RewriteEngine on
+        RewriteCond %{HTTP_HOST} ^yourdomain$ [NC,OR]
+        RewriteCond %{HTTP_HOST} ^yourdomain$
+        RewriteCond %{REQUEST_URI} !muzzie/public/
+        RewriteRule (.*) muzzie/public/$1 [L]

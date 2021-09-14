@@ -1,0 +1,59 @@
+.auth-page-wrapper {
+    font-family: "Nunito" sans-serif;
+    height: 100%;
+    color: rgba(0, 0, 0, 0.795) !important;
+    width: 100%;
+    background-image: url("/images/background.png");
+    background-size: cover;
+    transition: height 0.5s;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    .auth-box {
+        max-width: 420px;
+        min-width: 350px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 90%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 1em;
+        border-radius: 10px !important;
+        .logo-img-container {
+            img {
+                height: 50px;
+            }
+        }
+        &__inputs {
+            
+        }
+        &__auth-btn {
+            position: relative !important;
+            width: 60px !important;
+        }
+        &__title {
+           h2 {
+            text-align: center !important;
+            padding: .6em 0 !important;
+           }
+        }
+        .error-message-container {
+            display: flex;
+            justify-content: center;
+        }
+        .link-text {
+            font-size: 0.9em;
+            opacity: 0.7;
+            cursor: pointer;
+            transition: color 0.5s;
+            &:hover {
+                color: #4245a8;
+            }
+        }
+        .wide-divider {
+            margin-top: 26px;
+            margin-bottom: 8px;
+        }
+    }
+}
